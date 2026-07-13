@@ -51,6 +51,8 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -60,6 +62,7 @@ body {
   background-color: var(--bg-body); /* Warm Ivory */
   line-height: 1.6;
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1124,7 +1127,7 @@ iframe {
 }
 
 .download-card {
-  background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(15, 32, 59, 0.2) 100%);
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(15, 76, 58, 0.2) 100%); /* Emerald gradient tint */
   border: 1px solid var(--accent-gold);
   border-radius: 12px;
   padding: 40px;
@@ -1822,11 +1825,12 @@ iframe {
 }
 
 .footer-bottom {
-  background-color: #0c182c;
+  background-color: var(--primary-navy-dark); /* Dark Emerald background */
   padding: 24px 0;
   margin-top: 60px;
   font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(212, 175, 55, 0.1);
 }
 
 .footer-bottom-container {
@@ -2484,7 +2488,18 @@ iframe {
   }
 
   .filters-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important; /* Force 1 column on mobile to override HTML inline style */
+  }
+
+  .filter-toolbar {
+    padding: 20px 15px !important; /* Premium fit on small screens */
+  }
+
+  .b2b-notice-banner {
+    flex-wrap: wrap !important;
+    padding: 12px 16px !important;
+    margin: -10px auto 30px !important;
+    font-size: 0.85rem !important;
   }
 
   .stats-grid {
