@@ -1432,7 +1432,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <button class="btn btn-quick-view" data-id="${prod.id}">Quick View</button>
             <div class="btn-row">
               <button class="btn btn-secondary card-quote-btn" data-id="${prod.id}">Quote</button>
-              <a href="https://wa.me/919876543210?text=${encodeURIComponent(waText)}" 
+              <a href="https://wa.me/919588621126?text=${encodeURIComponent(waText)}" 
                  target="_blank" class="btn btn-whatsapp card-whatsapp-btn" aria-label="Ask on WhatsApp">
                 <i data-lucide="message-square"></i> Ask on WhatsApp
               </a>
@@ -1696,12 +1696,12 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     modalWhatsapp.onclick = () => {
-      window.open(`https://wa.me/919876543210?text=${encodeURIComponent(waMsgText)}`, '_blank');
+      window.open(`https://wa.me/919588621126?text=${encodeURIComponent(waMsgText)}`, '_blank');
     };
 
     modalSample.onclick = () => {
       const text = `Hello A-1 Handlooms, I would like to request a physical swatch sample card for "${prod.name}" (Code: ${prod.code}). Please advise on shipping details.`;
-      window.open(`https://wa.me/919876543210?text=${encodeURIComponent(text)}`, '_blank');
+      window.open(`https://wa.me/919588621126?text=${encodeURIComponent(text)}`, '_blank');
     };
 
     // Render Related Products
@@ -1791,7 +1791,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       closeModal(quoteModal);
       mQuoteForm.reset();
-      window.open(`https://wa.me/919876543210?text=${encodeURIComponent(text)}`, '_blank');
+      window.open(`https://wa.me/919588621126?text=${encodeURIComponent(text)}`, '_blank');
     });
   }
 
